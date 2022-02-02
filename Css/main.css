@@ -1,0 +1,335 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 50px;
+    place-items: center;
+    background: aliceblue;
+    
+}
+
+.grid .menu ul {
+	margin: auto;
+	list-style: none;
+	padding: 0;
+	display: grid;
+    grid-template-columns: 1fr  1fr  1fr 1fr 1fr;
+	
+
+}
+
+
+.grid .menu li{
+	border-right: 1px solid rgb(202, 40, 40);
+}
+
+.grid .menu li:hover {
+	background: rgba(38, 209, 231, 0.3);
+}
+
+.grid .menu li a {
+	display: grid;
+	padding: 15px 20px;
+	color: rgb(75, 119, 241);
+	text-decoration: none;
+}
+
+.grid .menu h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(75, 119, 241);
+    
+}
+
+.grid .menu h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(75, 119, 241);
+   
+}
+
+div img:hover {
+    background: rgba(231, 38, 96, 0.3);
+
+}
+
+/*ubicacion del segundo grid */  
+
+.nester-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    place-items: center;
+    background: aliceblue;
+    
+}
+.nester-grid div {
+    background: aliceblue;
+    padding: 2em;
+}
+
+.nester-grid div:hover {
+    border: 1px solid #f1c40f;
+}
+
+.nester-grid div{
+    text-align: center;
+}
+
+.nester-grid p{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(7, 16, 145);
+	
+}
+
+.nester-grid .botons:hover {
+	color: rgb(237, 237, 241);
+	background-color: rgb(7, 16, 145);
+	
+}
+
+/*ubicacion del media query */ 
+
+
+@media (max-width:768px) {
+
+	.grid {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+	}
+
+	.nester-grid {
+		display: grid;
+		grid-template-columns: 100%;
+		place-items: center;
+		background: aliceblue;
+		
+	}
+
+	.section1-grid div{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		place-items: center;
+		background: aliceblue;
+		gap: 3em;
+		
+	}
+
+	.form-grid .register {
+		width: 200px;
+		background: #24303c;
+		padding: 100px;
+		margin: auto;
+		margin-top: 50px;
+		border-radius: 2px;
+		font-family: 'calibri';
+		color: white;
+		box-shadow: 7px 13px 37px #000;
+	}
+
+	.Redessociales-grid p{
+		font-family: Arial, Helvetica, sans-serif;
+		color: rgb(8, 10, 129);
+		text-align: center;
+		font-size: 10px;
+		
+	}
+
+}
+
+	
+
+
+/*ubicacion del footer*/ 
+.Redessociales-grid{
+	display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+    background: aliceblue;
+    
+}
+
+
+.Redessociales-grid a{
+	color: #4f0bee;
+	height: 48px;
+	width: 30px;
+	list-style-type: none;
+	border-radius: 50%;
+	margin: 0 10px;
+	transition: transform 0.5s;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 2rem;
+
+}
+
+.Redessociales-grid ul li{
+	list-style-type: none;
+}
+
+
+.Redessociales-grid p{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(8, 10, 129);
+	text-align: center;
+}
+
+.Redessociales-grid ul {
+	margin: auto;
+	list-style: none;
+	padding: 0;
+	display: grid;
+    grid-template-columns: 1fr  1fr  1fr 1fr 1fr;
+    gap: 1em;
+
+}
+
+
+
+.Redessociales-grid .fa-youtube:hover { background: #ff0000; }
+.Redessociales-grid .fa-twitter:hover { background: #1da1f2; }
+.Redessociales-grid .fa-facebook-square:hover { background: #3b5998; }
+.Redessociales-grid .fa-instagram:hover { background: #5851db; }
+
+
+
+
+/* pagina de servicios*/
+
+.section-grid {
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(7, 16, 145);
+    
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+    background: aliceblue;
+    
+}
+
+.section-grid .text p{
+    text-align: justify;
+    margin: 20px;
+}
+
+
+/* pagina de Nosotros*/
+
+.div-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 200px 200px;
+    place-items: center;
+    background: aliceblue;
+    gap: 3em;
+    
+}
+
+.section1-grid div {
+    background: aliceblue;
+    padding: 3em;
+    
+}
+
+.section1-grid div:hover {
+    border: 1px solid rgb(7, 16, 145);
+}
+
+.section1-grid div{
+    text-align: justify;
+}
+
+.section1-grid p{
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(7, 16, 145);
+	
+}
+
+
+.div-grid > div {
+    padding: 2em;
+    
+
+}
+
+
+
+/* pagina Registrate*/
+
+.form-grid {
+	background: aliceblue;
+	display: grid;
+}
+
+.form-grid .register {
+	width: 400px;
+	background: #24303c;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 7px 13px 37px #000;
+}
+
+.form-grid .register h4 {
+	font-size: 22px;
+	margin-bottom: 20px;
+
+}
+
+.form-grid .controls {
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: 'calibri';
+	font-size: 18px;
+}
+
+.form-grid .register p {
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.form-grid .register  a {
+	color: white;
+	text-decoration: none;
+}
+
+.form-grid .register  a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.form-grid .register .botons {
+	width: 100%;
+	background: #1f53c5;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+
+}
+
+.form-grid .register .botons:hover {
+	color: #1da1f2;
+	
+}
+
+
