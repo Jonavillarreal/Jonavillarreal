@@ -1,0 +1,79 @@
+Nombre: Inyección SQL en la API user.get
+Fecha de Publicación: 27/11/2024
+Fecha de Actualización: 29/11/2024
+CVE ID: CVE-2024-42327
+puntuación CVSS | 9.9
+
+Nivel de Severidad: Critico
+
+Sistemas Afectados: API (A)
+Estado: Parche Disponible
+
+Descripción
+
+Se ha identificado una vulnerabilidad en una cuenta de usuario no-admin en el fronted de Zabbix con el rol por defecto User, o con cualquier otro rol que de acceso a la API. Existe un SQLi en la clase CUser en la función addRelatedObjects, esta función está siendo llamada desde la función CUser.get que está disponible para cada usuario que tiene acceso a la API.
+Una cuenta de usuario que no sea administrador en el frontend de Zabbix con el rol de usuario predeterminado o con cualquier otro rol que proporcione acceso a la API puede explotar esta vulnerabilidad. Existe un SQLi en la clase CUser en la función addRelatedObjects, esta función se llama desde la función CUser.get que está disponible para cada usuario que tiene acceso a la API.
+
+Impacto: Elevación de privilegios
+
+Recomendaciones: instalar la actualización de seguridad correspondiente indicada por el proveedor.
+
+                          -----------------------------*******************-------------------------------------
+Nombre: Ejecución remota de comandos (RCE)
+Fecha de Publicación: 26/11/2024
+CVE ID: CVE-2024-50370
+Nivel de Severidad: Critico
+puntuación CVSS | 9.8
+Sistemas Afectados: EKI-6333AC-2G ≤ v1.6.3 EKI-6333AC-2GD ≤ v1.6.3 EKI-6333AC-1GPO ≤ v1.2.1
+Estado: Parche Disponible
+
+Descripción
+
+Se ha identificado una vulnerabilidad en la Neutralización inadecuada de elementos especiales utilizados en un comando del sistema operativo (OS Command Injection) que afecta a los siguientes dispositivos fabricados por Advantech: EKI-6333AC-2G (<= 1.6.3), EKI-6333AC-2GD (<= v1.6.3) y EKI-6333AC-1GPO (<= v1.2.1).
+
+Esta puede ser explotada por usuarios remotos no autenticados capaces de interactuar con el servicio por defecto edgserver habilitado en el punto de acceso y se ejecutan comandos maliciosos con privilegios de root. No hay autenticación habilitada en el servicio y el origen de la vulnerabilidad reside en el código de procesamiento asociado a la operación cfg_cmd_set_eth_conf.
+
+Impacto: Usuarios no autenticados para ejecutar comandos arbitrarios en el dispositivo con privilegios de root.
+
+Recomendación: Versión:1 (rev.1) - 22 de noviembre de 2024 Lanzamiento inicial.
+HPE ha realizado las siguientes actualizaciones de software e información de mitigación para resolver la
+vulnerabilidad en HPE Insight Remote Support.
+
+                         HPE Insight Remote Support v7.14.0.629 o posterior
+
+                     -----------------------------*******************-------------------------------------
+Nombre: Elevación de privilegios en Microsoft Copilot Studio
+Fecha de Publicación: 26/11/2024
+CVE ID: CVE-2024-49038
+Nivel de Severidad: Critico
+Sistemas Afectados: Microsoft Copilot Studio
+Estado: Mitigado
+
+Descripción
+
+Se ha identificado una vulnerabilidad en la neutralización inadecuada de la entrada durante la generación de páginas web (Cross-site Scripting) en Copilot Studio por un atacante no autorizado conduce a la elevación de privilegios a través de una red.
+
+Impacto: Elevación de Privilegios
+
+Recomendación: Esta vulnerabilidad ya ha sido completamente mitigada por Microsoft. Los usuarios de este servicio no tienen que tomar ninguna medida
+
+                     -----------------------------*******************-------------------------------------
+Nombre: Archivos o directorios accesibles a terceros
+Fecha de Publicación: 22/11/2024
+CVE ID: CVE-2024-53676
+Nivel de Severidad: Critico
+Sistemas Afectados: HPE Insight Remote Support
+Estado: Parche Disponible
+
+Descripción
+
+Se han identificado varias vulnerabilidades de seguridad en HPE Insight Remote Support. Estas vulnerabilidades podrían permitir de forma remota el traspaso de directorios, la divulgación de información o la ejecución de código.
+
+Impacto: Ejecución de código
+Navegación por directorios
+Divulgación de información
+
+Recomendaciones: HPE ha realizado las siguientes actualizaciones de software e información de mitigación para resolver la
+vulnerabilidad en HPE Insight Remote Support.
+
+                            HPE Insight Remote Support v7.14.0.629 o posterior.
